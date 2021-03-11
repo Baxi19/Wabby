@@ -3021,6 +3021,7 @@ MonoBehaviour:
   playerRb: {fileID: 1536312636}
   speed: 6
   jumpSpeed: 420
+  playerAnimator: {fileID: 1536312641}
 --- !u!95 &1536312641
 Animator:
   serializedVersion: 3
