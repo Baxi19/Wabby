@@ -11,10 +11,14 @@ public class EnemyBehaviour : MonoBehaviour
     public float delay = 2.5f;
     public float speed = 1.0f;
     
+    ParticleSystem enemyParticle;
+    AudioSource deadAudio;
 
-
+    // Start is called before the first frame update
     void Start()
     {
+        deadAudio = GetComponentInParent<AudioSource>();
+        enemyParticle = GameObject.Find("EnemyParticle").GetComponent<ParticleSystem>();
         enemyRb = GetComponent<Rigidbody2D>();
         enemySr = GetComponent<SpriteRenderer>();
         enemyAnimator = GetComponent<Animator>();
@@ -40,6 +44,9 @@ public class EnemyBehaviour : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision){
         if(collision.gameObject.tag == "Player"){
             if(transform.position.y + .03f < collision.transform.position.y){
+                enemyParticle.transform.position = transform.position;
+                enemyParticle.Play();
+                deadAudio.Play();
                 enemyAnimator.SetBool("isDead", true);
             }
         }

@@ -34,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(isGrounded){
             if(Input.GetKeyDown(KeyCode.Space)){
+                GetComponent<AudioSource>().Play();
                 playerRb.AddForce(Vector2.up * jumpSpeed);
                 isGrounded = false;
                 playerAnimator.SetTrigger("jump");
