@@ -6,13 +6,14 @@ using UnityEngine.UI;
 public class Collectable : MonoBehaviour
 {
     public static int collectableQuantity = 0;
-    public Text collectableText;
+    Text collectableText;
     ParticleSystem collectableParticle;
     AudioSource collectableAudio;
 
     // Start is called before the first frame update
     void Start()
     {
+        collectableText = GameObject.Find("CollectableQuantityText").GetComponent<Text>();
         collectableParticle = GameObject.Find("CollectableParticle").GetComponent<ParticleSystem>();
         collectableAudio = GetComponentInParent<AudioSource>();
     }
