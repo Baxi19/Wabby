@@ -5235,7 +5235,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 490051201}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.516406, y: 3.439215, z: -10}
+  m_LocalPosition: {x: -6.916406, y: -1.310785, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 603760546}
@@ -5371,7 +5371,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.9530869, y: 1.8431523, z: -10}
+  m_LocalPosition: {x: -1.9433079, y: -0.45769668, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -13883,7 +13883,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536312635}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.2, y: 2.49, z: 0}
+  m_LocalPosition: {x: -6.6, y: -2.26, z: 0}
   m_LocalScale: {x: 0.9550437, y: 0.8201735, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -19232,6 +19232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e1320e878d2d8b43b18a1c94f352817, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneChanger: {fileID: 0}
 --- !u!58 &1662160931
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19611,11 +19612,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SceneChanger
-      objectReference: {fileID: 0}
-    - target: {fileID: 8615718973141325831, guid: e56def7625eb8fe47a1b506249676122,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e56def7625eb8fe47a1b506249676122, type: 3}
