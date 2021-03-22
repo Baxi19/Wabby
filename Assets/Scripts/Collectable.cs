@@ -13,6 +13,7 @@ public class Collectable : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        collectableQuantity = 0;
         collectableText = GameObject.Find("CollectableQuantityText").GetComponent<Text>();
         collectableParticle = GameObject.Find("CollectableParticle").GetComponent<ParticleSystem>();
         collectableAudio = GetComponentInParent<AudioSource>();
