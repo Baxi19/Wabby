@@ -3,6 +3,9 @@
 
 <div class="row" align="center">
   <img src="./Docs/level1.gif" width="600" height="400" />
+</div>
+
+<div class="row" align="center">
   <img src="./Docs/level2.gif" width="600" height="400" />
 </div>
 
