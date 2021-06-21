@@ -1,5 +1,4 @@
 # <div align="center">Wabby :rocket:</div>
-### <div align="center">Demo of game :fire: !!</div>
 
 <div class="row" align="center">
   <h3>Level 1 :octocat:</h3>
